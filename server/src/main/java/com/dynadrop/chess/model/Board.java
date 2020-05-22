@@ -95,7 +95,7 @@ public class Board implements Serializable {
     for (int x=0; x<=7; x++) {
       String line = "";
       for (int y=0; y<=7; y++) {
-        Piece piece = this.getPieceAt(new Position(y, x));
+        Piece piece = this.getPieceAt(new Position(x, y));
         if (piece == null) {
           line += " _";
         }else {
